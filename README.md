@@ -14,4 +14,3 @@
 pip install pyautogui
 pip install selenium
 ```
-s
