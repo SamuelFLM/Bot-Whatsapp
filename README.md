@@ -21,4 +21,4 @@ pip install pysimplegui
 
 > Aqui deve ser informado o numero de telefone e uma mensagem
 
-<img src="doc//img//AutomacaoAtt.png" alt="automacao">
+<img src="doc//img//Automacao.png" alt="automacao">
