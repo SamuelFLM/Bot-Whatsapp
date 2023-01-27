@@ -16,3 +16,4 @@ pip install selenium
 pip install pysimplegui
 ```
 <img src="doc//img//Interface Home.png" alt="home">
+<img src="doc//img//Interface automacao.png" alt="automacao">
