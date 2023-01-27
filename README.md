@@ -15,5 +15,10 @@ pip install pyautogui
 pip install selenium
 pip install pysimplegui
 ```
+> Interacao Inicial com Usuario
+
 <img src="doc//img//Interface Home.png" alt="home">
-<img src="doc//img//Automacao.png.png" alt="automacao">
+
+> Aqui deve ser informado o numero de telefone e uma mensagem
+
+<img src="doc//img//AutomacaoAtt.png" alt="automacao">
