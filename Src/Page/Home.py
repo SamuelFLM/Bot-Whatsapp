@@ -8,15 +8,16 @@ class Interface_home:
     def page(self):
         
         cabecalho = [[sg.Image(filename="Src//Page//Img//Logo//logo.png", background_color=self.background, pad=(100,(20,20)))],
-                     [sg.Image(filename="Src//Page//Img//Icon//Home//texto.png", background_color=self.background, pad=(0,(0,30)),k="texto", visible=True)], 
+                     [sg.Image(filename="Src//Page//Img//Icon//Home//texto.png", background_color=self.background, pad=(0,(0,60)),k="texto", visible=True)], 
                     ]
         carrocel = [
-            [sg.Image(filename="Src//Page//Img//Icon//esquerda_branca.png", background_color=self.background, pad=(10,(0,0)),k="esquerda", enable_events=True, visible=False),
-             sg.Image(filename="Src//Page//Img//Icon//Home//part1.png", background_color=self.background, pad=(20,(10,50)),k="imagem", visible=True),
+            [sg.Image(filename="Src//Page//Img//Icon//esquerda_branca.png", background_color=self.background, pad=(10,(0,0)),k="esquerda", enable_events=True, visible=True),
+             sg.Image(filename="Src//Page//Img//Icon//Home//part1.png", background_color=self.background, pad=(0,(0,80)),k="imagem", visible=True),
+             sg.Image(filename="Src//Page//Img//Icon//Home//part3.png", background_color=self.background, pad=(0,(0,0)),k="imagem2", visible=False),
              sg.Image(filename="Src//Page//Img//Icon//direita_branca.png", background_color=self.background, pad=(10,(0,0)),k="direita", enable_events=True, visible=True),
             ],
         ]
-        rodape = [[sg.Image(filename="Src//Page//Img//Icon//Home//rodape1.png", background_color=self.background, pad=(0,(50,0)),k="entrar", enable_events=True)],
+        rodape = [[sg.Image(filename="Src//Page//Img//Icon//Home//rodape1.png", background_color=self.background, pad=(0,(0,0)),k="entrar", enable_events=True)],
                   [sg.Image(filename="Src//Page//Img//Icon//Home//rodape2.png", background_color=self.background, pad=(0,(0,0)),k="como_utilizar", enable_events=True)],
                  ]
         

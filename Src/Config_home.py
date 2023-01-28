@@ -17,18 +17,13 @@ class Config_home:
             if event == sg.WIN_CLOSED:
                 break
             
-            
             if event == "direita":
-                self.window["imagem"].update(filename="Src//Page//Img//Icon//Home//part3.png")
-                self.window["texto"].update(filename="Src//Page//Img//Icon//Home//texto3.png")
-                self.window["esquerda"].update(visible=True)
-                self.window["direita"].update(visible=False)
-                
-            if event == "esquerda":
                 self.window["imagem"].update(filename="Src//Page//Img//Icon//Home//part1.png")
                 self.window["texto"].update(filename="Src//Page//Img//Icon//Home//texto.png")
-                self.window["direita"].update(visible=True)
-                self.window["esquerda"].update(visible=False)
+                
+            if event == "esquerda":
+                self.window["imagem"].update(filename="Src//Page//Img//Icon//Home//part3.png")
+                self.window["texto"].update(filename="Src//Page//Img//Icon//Home//texto3.png")
             
             if event == "como_utilizar":
                 webbrowser.open_new_tab("https://github.com/SamuelFLM/Bot-Whatsapp")    
