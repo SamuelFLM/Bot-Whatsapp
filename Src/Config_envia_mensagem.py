@@ -32,16 +32,10 @@ class Config_automacao:
             numero = str(values["numero"])
             mensagem = str(values["mensagem"])
             if event == "enviar":
-                webbrowser.open_new_tab(f"https://api.whatsapp.com/send?phone={numero}&text={mensagem}")
+                webbrowser.open_new_tab(f"https://web.whatsapp.com/send?phone={numero}&text={mensagem}")
                 
-                while bot.locateCenterOnScreen("Src//Page//Img//Icon//Automacao//iniciar_conversa.png"):
-                    bot.sleep(1)
-                iniciar = bot.locateCenterOnScreen("Src//Page//Img//Icon//Automacao//iniciar_conversa.png")
-                bot.click(iniciar[0],iniciar[1])
-                    
-                
-                
-        
+                bot.sleep(8)
+                bot.press('enter')
             
             if bool(values["numero"] and values["mensagem"]):
                 self.window["enviar"].update(filename="Src//Page//Img//Icon//Automacao//enviaron.png")
