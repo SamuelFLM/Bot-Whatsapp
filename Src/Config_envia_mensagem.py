@@ -34,8 +34,12 @@ class Config_automacao:
             if event == "enviar":
                 webbrowser.open_new_tab(f"https://web.whatsapp.com/send?phone={numero}&text={mensagem}")
                 
-                bot.sleep(8)
+                bot.sleep(15)
                 bot.press('enter')
+            
+            
+            if event == "file":
+                pass
             
             if bool(values["numero"] and values["mensagem"]):
                 self.window["enviar"].update(filename="Src//Page//Img//Icon//Automacao//enviaron.png")
@@ -44,10 +48,15 @@ class Config_automacao:
                 
             if bool(values["numero"] and values["mensagem"]):
                 self.window["add"].update(filename="Src//Page//Img//Icon//Automacao//addon.png")
+                
+                if event == "add":
+                    pass
             else:
                 self.window["add"].update(filename="Src//Page//Img//Icon//Automacao//addoff.png")
             
                         
 if __name__ == "__main__":
-    t = Config_automacao()
+    t = Config_automacao(home=None)
     t.executar()
+        
+   
