@@ -1,6 +1,8 @@
 
 from Page.Home import Interface_home
-from Config_envia_mensagem import Config_automacao
+from Config_log_contatos import Config_contatos
+from Config_dados_contato import Config_dados_contato
+from Data.Contatos import Contatos
 import PySimpleGUI as sg
 import webbrowser
 janela_home = Interface_home()
@@ -20,8 +22,8 @@ class Config_home:
             
             if event == "entrar":
                 self.window.close()
-                janela_automacao = Config_automacao(home=Config_home())
-                janela_automacao.executar()
+                janela_automacao = Config_contatos(home=Config_home())
+                janela_automacao.executar(dados="")
                 break
             
             if event == "direita":
