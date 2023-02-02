@@ -1,11 +1,11 @@
 import PySimpleGUI as sg
-
 class Interface_log_contatos:
     
-    def __init__(self) -> None:
+    def __init__(self, janela) -> None:
         self.background = "white"
+        self.janela = janela
         
-    def page(self, dados):
+    def page(self, dados, contatos_a):
         cabecalho = [[sg.Image(filename="Src//Page//Img//Logo//logo.png", background_color=self.background, pad=(100,(50,0)))],
                      [sg.Image(filename="Src//Page//Img//Icon//Contatos//Contatos.png", background_color=self.background, pad=(130,(50,30)))],]
         
@@ -34,9 +34,9 @@ class Interface_log_contatos:
                     
                 if event == "add":
                     window.close()
+                    self.janela.page()
                     break
-                    # window.close()
-                    # window = janela_automacao.page()
+                   
                 
                             
             
@@ -46,16 +46,17 @@ class Interface_log_contatos:
                         #     bot.sleep(15)
                         #     bot.press('enter')   
                     
-                # window["table"].update(values=contato.visualizar_contato(1))
-                    
+                if bool(values["nome_contato"]) and event == "pesquisar":
+                    window["table"].update(values=contatos_a.visualizar_contato(1))
+                   
                 # if bool(values["nome_contato"]) == False:
-                #     window["table"].update(values=contato.visualizar_contatos())
+                #     window["table"].update(values=contatos_a.visualizar_contatos())
                     
                 
-                # if event == "excluir":   
-                #     contato.excluir_contato(values["table"][0])
-                #     window["table"].update(values=[])
+                if event == "excluir":   
+                    contatos_a.excluir_contato(values["table"][0])
+                    window["table"].update(values=dados)
                     
                 # if event == "table":
-                #     print(values["table"][0])
+                #     print(values["table"][0])1
                 #     window["table"].update(values=contato.visualizar_contatos())
