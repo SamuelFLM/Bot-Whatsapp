@@ -1,5 +1,9 @@
 import PySimpleGUI as sg
+from Page.Log_contatos import Interface_log_contatos
+from Data.Contatos import Contatos
+janela_log = Interface_log_contatos()
 
+contatos = Contatos()
 
 class Interface_dados_contato:
     
@@ -32,4 +36,27 @@ class Interface_dados_contato:
         layout = [cabecalho, nome,numero,mensagem, rodape]
         
         window = sg.Window("Bot Whatsapp", layout=layout,size=(374, 718), grab_anywhere=True, margins=(0,0), background_color=self.background,icon="Src//Page//Img//Logo//icon.ico", finalize=True)
-        return window
+        
+        while True:
+            event, values = window.read(timeout=1)
+            
+            if event == "voltar":
+                window.close()
+                janela_log.page()
+                break
+            
+            tamanho_mensagem = len(values["mensagem"])
+            window["tamanho_mensagem"].update(f"{tamanho_mensagem} caracteres")
+           
+            if bool(values["nome_contato"]) and bool(values["numero"] and values["mensagem"]):
+                window["enviar"].update(filename="Src//Page//Img//Icon//Automacao//Group 20.png")
+                if event == "enviar":
+                    nome = str(values["nome_contato"])
+                    numero = str(values["numero"])
+                    mensagem = str(values["mensagem"])
+                    contatos.adicionar_contato(nome,numero,mensagem)
+                    window.close()
+                    janela_log.page(contatos.visualizar_contatos())
+                    break
+            else:
+                window["enviar"].update(filename="Src//Page//Img//Icon//Automacao//Group 19 (2).png")

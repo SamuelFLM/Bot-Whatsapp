@@ -22,5 +22,6 @@ class Interface_home:
                  ]
         
         layout = [cabecalho,carrocel,rodape]
-        window = sg.Window("Bot Whatsapp", layout=layout,size=(374, 718), grab_anywhere=True, margins=(0,0),element_justification='c', background_color=self.background,icon="Src//Page//Img//Logo//icon.ico")
+        window = sg.Window("Bot Whatsapp", layout=layout,size=(374, 718), grab_anywhere=True, margins=(0,0),element_justification='c', background_color=self.background,icon="Src//Page//Img//Logo//icon.ico", finalize=True)
         return window
+    
