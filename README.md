@@ -28,6 +28,21 @@ pip install pysimplegui
 
 <img src="doc//img//Automacao1.png" alt="automacao">
 
-<h1>Interface Home</h1>
-
+> Interface Home
 ![home](doc//img//home.gif)
+
+> Como fazer a Utilizacao do bot
+![como_utilizar](doc//img//comoutilizar.gif)
+
+> Como adicionar o contato
+![add_contato](doc//img//addcontato.gif)
+
+> Como pesquisar o contato
+![pesquisar](doc//img//pesquisar.gif)
+
+> Como excluir o contato
+![excluir](doc//img//excluir.gif)
+> Como editar o contato
+![editar](doc//img//editar.gif)
+> Como adicionar o contato
+![add](doc//img//add.gif)
