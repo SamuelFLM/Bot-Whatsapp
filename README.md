@@ -19,6 +19,11 @@ pip install pysimplegui
 
 <img src="doc//img//Interface Home.png" alt="home">
 
-> Aqui deve ser informado o numero de telefone e uma mensagem
+> Nessa pagina o usuario vai ter total controle dos seus contatos para envio de mensagem automatica
 
 <img src="doc//img//Automacao.png" alt="automacao">
+
+
+> Aqui deve ser informado o nome, numero de telefone e uma mensagem
+
+<img src="doc//img//Automacao1.png" alt="automacao">
