@@ -32,17 +32,17 @@ pip install pysimplegui
 ![home](doc//img//home.gif)
 
 > Como fazer a Utilizacao do bot
-![como_utilizar](doc//img//comoutilizar.gif)
+![como_utilizar1](doc//img//comoutilizar.gif)
 
 > Como adicionar o contato
-![add_contato](doc//img//addcontato.gif)
+![add_contato1](doc//img//addcontato.gif)
 
 > Como pesquisar o contato
-![pesquisar](doc//img//pesquisar.gif)
+![pesquisar1](doc//img//pesquisar.gif)
 
 > Como excluir o contato
-![excluir](doc//img//excluir.gif)
+![excluir1](doc//img//excluir.gif)
 > Como editar o contato
-![editar](doc//img//editar.gif)
+![editar1](doc//img//editar.gif)
 > Como adicionar o contato
-![add](doc//img//add.gif)
+![add1](doc//img//add.gif)
